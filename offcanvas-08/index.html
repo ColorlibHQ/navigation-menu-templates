@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offcanvas V08 | Colorlib</title>
+  
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cl-offcanvas08">
+    <header class="cl-offcanvas08__bar">
+      <a class="cl-offcanvas08__logo" href="#">Norrland<span>/</span>Atelier</a>
+      <button class="cl-offcanvas08__menu-btn" type="button" aria-expanded="false" aria-controls="cl-offcanvas08-menu" data-drawer-open>
+        <span>Menu</span>
+        <span class="cl-offcanvas08__lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </header>
+
+    <main class="cl-offcanvas08__hero">
+      <img class="cl-offcanvas08__hero-img" src="images/house.jpg" width="1100" height="720" alt="Dark timber house with glowing windows under a large tree at dusk">
+      <div class="cl-offcanvas08__hero-copy">
+        <p class="cl-offcanvas08__eyebrow">Architecture &amp; interiors &middot; Troms&oslash; and Oslo</p>
+        <h1 class="cl-offcanvas08__h1">Houses that hold the light.</h1>
+        <p class="cl-offcanvas08__intro">A studio of eleven designing homes, cabins and small public buildings for long winters and short summers.</p>
+      </div>
+      <p class="cl-offcanvas08__caption">Villa Skarv, Kval&oslash;ya &mdash; 2024</p>
+    </main>
+
+    <dialog class="cl-offcanvas08__overlay" id="cl-offcanvas08-menu" aria-labelledby="cl-offcanvas08-title">
+      <div class="cl-offcanvas08__stage" data-dismiss-area>
+        <div class="cl-offcanvas08__top">
+          <h2 class="cl-offcanvas08__title" id="cl-offcanvas08-title">Norrland<span>/</span>Atelier menu</h2>
+          <button class="cl-offcanvas08__close" type="button" data-drawer-close>
+            <span>Close</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+
+        <nav class="cl-offcanvas08__nav" aria-label="Main">
+          <ol class="cl-offcanvas08__list">
+            <li style="--cl-offcanvas08-i:0"><a class="cl-offcanvas08__link" href="#" aria-current="page"><span class="cl-offcanvas08__num" aria-hidden="true">01</span><span class="cl-offcanvas08__word">Projects</span></a></li>
+            <li style="--cl-offcanvas08-i:1"><a class="cl-offcanvas08__link" href="#"><span class="cl-offcanvas08__num" aria-hidden="true">02</span><span class="cl-offcanvas08__word">Studio</span></a></li>
+            <li style="--cl-offcanvas08-i:2"><a class="cl-offcanvas08__link" href="#"><span class="cl-offcanvas08__num" aria-hidden="true">03</span><span class="cl-offcanvas08__word">Process</span></a></li>
+            <li style="--cl-offcanvas08-i:3"><a class="cl-offcanvas08__link" href="#"><span class="cl-offcanvas08__num" aria-hidden="true">04</span><span class="cl-offcanvas08__word">Journal</span></a></li>
+            <li style="--cl-offcanvas08-i:4"><a class="cl-offcanvas08__link" href="#"><span class="cl-offcanvas08__num" aria-hidden="true">05</span><span class="cl-offcanvas08__word">Contact</span></a></li>
+          </ol>
+        </nav>
+
+        <aside class="cl-offcanvas08__aside" aria-label="Studio details">
+          <figure class="cl-offcanvas08__feature">
+            <img src="images/gallery.jpg" width="700" height="500" alt="White angular museum building with a glass facade" loading="lazy">
+            <figcaption><span>Latest project</span> Polar Light Gallery, Alta</figcaption>
+          </figure>
+          <div class="cl-offcanvas08__contact">
+            <p class="cl-offcanvas08__label">New work</p>
+            <a class="cl-offcanvas08__mail" href="#">hello@norrland-atelier.example</a>
+            <p class="cl-offcanvas08__addr">Storgata 71, 9008 Troms&oslash; &middot; +47 77 60 12 30</p>
+          </div>
+          <ul class="cl-offcanvas08__small">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press kit</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </aside>
+      </div>
+    </dialog>
+  </div>
+	<script src="js/snippet.js"></script>
+</body>
+</html>

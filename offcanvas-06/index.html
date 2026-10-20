@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offcanvas V06 | Colorlib</title>
+  
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cl-offcanvas06">
+    <header class="cl-offcanvas06__bar">
+      <p class="cl-offcanvas06__brand"><span class="cl-offcanvas06__logo" aria-hidden="true"></span>Trackline</p>
+      <p class="cl-offcanvas06__project">Sprint 42 &middot; Web team</p>
+      <button class="cl-offcanvas06__bell" type="button" aria-expanded="false" aria-controls="cl-offcanvas06-panel" aria-label="Notifications, 5 unread" data-drawer-open>
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4l2-2zM10 20a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <span class="cl-offcanvas06__badge" aria-hidden="true" data-badge>5</span>
+      </button>
+      <span class="cl-offcanvas06__me" aria-hidden="true">JD</span>
+    </header>
+
+    <main class="cl-offcanvas06__page">
+      <div class="cl-offcanvas06__page-head">
+        <h1 class="cl-offcanvas06__h1">Sprint board</h1>
+        <p class="cl-offcanvas06__meta">4 days left &middot; 7 issues &middot; 23 of 38 points done</p>
+      </div>
+      <div class="cl-offcanvas06__board">
+        <section class="cl-offcanvas06__col" aria-label="To do">
+          <h2 class="cl-offcanvas06__col-title">To do <span>3</span></h2>
+          <ul class="cl-offcanvas06__tasks"><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#7c6cf0">Design system</span><strong>Audit colour tokens</strong></li><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#d08a2e">Billing</span><strong>Invoice PDF footer</strong></li><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#2f8fd6">Web</span><strong>Localise pricing page</strong></li></ul>
+        </section>
+        <section class="cl-offcanvas06__col" aria-label="In progress">
+          <h2 class="cl-offcanvas06__col-title">In progress <span>2</span></h2>
+          <ul class="cl-offcanvas06__tasks"><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#e0567a">Web</span><strong>Checkout redesign</strong></li><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#2f8fd6">Web</span><strong>Fix date picker on Safari</strong></li></ul>
+        </section>
+        <section class="cl-offcanvas06__col" aria-label="Review">
+          <h2 class="cl-offcanvas06__col-title">Review <span>2</span></h2>
+          <ul class="cl-offcanvas06__tasks"><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#3aa37a">Platform</span><strong>API rate limits</strong></li><li class="cl-offcanvas06__task"><span class="cl-offcanvas06__label" style="--cl-offcanvas06-tag:#4aa3a0">Growth</span><strong>Onboarding emails</strong></li></ul>
+        </section>
+      </div>
+    </main>
+
+    <dialog class="cl-offcanvas06__panel" id="cl-offcanvas06-panel" aria-labelledby="cl-offcanvas06-title">
+      <div class="cl-offcanvas06__head">
+        <h2 class="cl-offcanvas06__title" id="cl-offcanvas06-title">Notifications <span class="cl-offcanvas06__count" data-count>5 new</span></h2>
+        <button class="cl-offcanvas06__close" type="button" aria-label="Close notifications" data-drawer-close>
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="cl-offcanvas06__tools">
+        <div class="cl-offcanvas06__filters" role="group" aria-label="Show">
+          <button type="button" class="cl-offcanvas06__filter" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="cl-offcanvas06__filter" aria-pressed="false" data-filter="unread">Unread</button>
+          <button type="button" class="cl-offcanvas06__filter" aria-pressed="false" data-filter="mention">Mentions</button>
+        </div>
+        <button class="cl-offcanvas06__mark" type="button" data-mark-all>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12l5 5L18 6M12 17l1 1L22 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Mark all as read
+        </button>
+      </div>
+      <div class="cl-offcanvas06__scroll">
+        <section class="cl-offcanvas06__group" aria-label="Today">
+          <h3 class="cl-offcanvas06__group-title">Today</h3>
+          <ul class="cl-offcanvas06__list">
+            <li class="cl-offcanvas06__item is-unread" data-kind="mention">
+              <span class="cl-offcanvas06__avatar" style="--cl-offcanvas06-av:#e0567a" aria-hidden="true">LO</span>
+              <a class="cl-offcanvas06__link" href="#"><span class="cl-offcanvas06__sr">Unread: </span><strong>Lena Ortiz</strong> mentioned you in <strong>Checkout redesign</strong> <span class="cl-offcanvas06__extra">&ldquo;Can you check the empty state before Friday?&rdquo;</span></a>
+              <span class="cl-offcanvas06__time">12 min ago</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+            <li class="cl-offcanvas06__item is-unread" data-kind="status">
+              <span class="cl-offcanvas06__avatar" style="--cl-offcanvas06-av:#3aa37a" aria-hidden="true">MK</span>
+              <a class="cl-offcanvas06__link" href="#"><span class="cl-offcanvas06__sr">Unread: </span><strong>Marcus Kim</strong> moved <strong>API rate limits</strong> <span class="cl-offcanvas06__extra">from In progress to Review</span></a>
+              <span class="cl-offcanvas06__time">48 min ago</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+            <li class="cl-offcanvas06__item is-unread" data-kind="system">
+              <span class="cl-offcanvas06__avatar cl-offcanvas06__avatar--bot" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" focusable="false"><path d="M12 3l7 4v6c0 4-3 7-7 8-4-1-7-4-7-8V7l7-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <a class="cl-offcanvas06__link" href="#"><span class="cl-offcanvas06__sr">Unread: </span><strong>Deploy bot</strong> finished deploying <strong>web-app v4.12.0</strong> <span class="cl-offcanvas06__extra">to production in 3 min 14 s</span></a>
+              <span class="cl-offcanvas06__time">1 h ago</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+          </ul>
+        </section>
+        <section class="cl-offcanvas06__group" aria-label="Yesterday">
+          <h3 class="cl-offcanvas06__group-title">Yesterday</h3>
+          <ul class="cl-offcanvas06__list">
+            <li class="cl-offcanvas06__item is-unread" data-kind="mention">
+              <span class="cl-offcanvas06__avatar" style="--cl-offcanvas06-av:#7c6cf0" aria-hidden="true">AN</span>
+              <a class="cl-offcanvas06__link" href="#"><span class="cl-offcanvas06__sr">Unread: </span><strong>Aiko Nakamura</strong> commented on <strong>Onboarding emails</strong> <span class="cl-offcanvas06__extra">&ldquo;Copy for step 3 is final, go ahead.&rdquo;</span></a>
+              <span class="cl-offcanvas06__time">Yesterday, 17:05</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+            <li class="cl-offcanvas06__item is-unread" data-kind="status">
+              <span class="cl-offcanvas06__avatar" style="--cl-offcanvas06-av:#2f8fd6" aria-hidden="true">RB</span>
+              <a class="cl-offcanvas06__link" href="#"><span class="cl-offcanvas06__sr">Unread: </span><strong>Rui Batista</strong> assigned you <strong>Fix date picker on Safari</strong> <span class="cl-offcanvas06__extra">Due Thursday &middot; High priority</span></a>
+              <span class="cl-offcanvas06__time">Yesterday, 11:20</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+            <li class="cl-offcanvas06__item" data-kind="status">
+              <span class="cl-offcanvas06__avatar" style="--cl-offcanvas06-av:#e0567a" aria-hidden="true">LO</span>
+              <a class="cl-offcanvas06__link" href="#"><strong>Lena Ortiz</strong> liked <strong>your comment</strong> <span class="cl-offcanvas06__extra">on Checkout redesign</span></a>
+              <span class="cl-offcanvas06__time">Yesterday, 09:48</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+          </ul>
+        </section>
+        <section class="cl-offcanvas06__group" aria-label="Earlier this week">
+          <h3 class="cl-offcanvas06__group-title">Earlier this week</h3>
+          <ul class="cl-offcanvas06__list">
+            <li class="cl-offcanvas06__item" data-kind="status">
+              <span class="cl-offcanvas06__avatar" style="--cl-offcanvas06-av:#4aa3a0" aria-hidden="true">SW</span>
+              <a class="cl-offcanvas06__link" href="#"><strong>Sofia Weber</strong> invited you to <strong>Q3 planning board</strong> <span class="cl-offcanvas06__extra">Starts Monday 10:00</span></a>
+              <span class="cl-offcanvas06__time">Mon, 14:30</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+            <li class="cl-offcanvas06__item" data-kind="system">
+              <span class="cl-offcanvas06__avatar cl-offcanvas06__avatar--bot" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" focusable="false"><path d="M12 3l7 4v6c0 4-3 7-7 8-4-1-7-4-7-8V7l7-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <a class="cl-offcanvas06__link" href="#"><strong>Deploy bot</strong> flagged <strong>2 failing tests</strong> <span class="cl-offcanvas06__extra">in payments-service on main</span></a>
+              <span class="cl-offcanvas06__time">Mon, 08:12</span>
+              <span class="cl-offcanvas06__dot" aria-hidden="true"></span>
+            </li>
+          </ul>
+        </section>
+        <div class="cl-offcanvas06__empty" data-empty hidden>
+          <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="cl-offcanvas06__empty-title">You&rsquo;re all caught up</p>
+          <p class="cl-offcanvas06__empty-text">Nothing new in this view.</p>
+        </div>
+      </div>
+      <p class="cl-offcanvas06__sr" role="status" data-status></p>
+      <div class="cl-offcanvas06__foot">
+        <a class="cl-offcanvas06__settings" href="#">Notification settings</a>
+        <a class="cl-offcanvas06__all" href="#">View all activity</a>
+      </div>
+    </dialog>
+  </div>
+	<script src="js/snippet.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offcanvas V02 | Colorlib</title>
+  
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cl-offcanvas02">
+    <header class="cl-offcanvas02__bar">
+      <a class="cl-offcanvas02__logo" href="#">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3c5 5 9 9.5 9 15a9 9 0 0 1-18 0c0-5.5 4-10 9-15z" fill="#b3541e"/><path d="M16 10c-2 3-3 6-1 11" fill="none" stroke="#faf6f0" stroke-width="2" stroke-linecap="round"/></svg>
+        Ember &amp; Oak
+      </a>
+      <nav class="cl-offcanvas02__menu" aria-label="Shop">
+        <a href="#" aria-current="page">Coffee</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Brew guides</a>
+      </nav>
+      <button class="cl-offcanvas02__cart-btn" type="button" aria-expanded="false" aria-controls="cl-offcanvas02-cart" data-drawer-open>
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 7h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 7z M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span>Cart</span>
+        <span class="cl-offcanvas02__badge" data-cart-count>3</span>
+        <span class="cl-offcanvas02__sr" data-cart-count-label>, 3 items</span>
+      </button>
+    </header>
+
+    <main class="cl-offcanvas02__page">
+      <div class="cl-offcanvas02__product">
+        <img class="cl-offcanvas02__hero-img" src="images/hero.jpg" width="900" height="700" alt="Two flat whites with latte art held over a wooden table">
+        <div class="cl-offcanvas02__detail">
+          <p class="cl-offcanvas02__origin">Single origin &middot; Ethiopia</p>
+          <h1 class="cl-offcanvas02__name">Guji Natural</h1>
+          <p class="cl-offcanvas02__notes">Blueberry, cacao nib, jasmine</p>
+          <p class="cl-offcanvas02__copy">Grown at 2,100 m by smallholders around Shakiso and dried on raised beds for 21 days. A bright, juicy filter coffee that also makes a fruity espresso.</p>
+          <dl class="cl-offcanvas02__facts">
+            <div><dt>Roast</dt><dd>Light</dd></div>
+            <div><dt>Process</dt><dd>Natural</dd></div>
+            <div><dt>Roasted</dt><dd>Every Tuesday</dd></div>
+          </dl>
+          <div class="cl-offcanvas02__buy">
+            <p class="cl-offcanvas02__price">&euro;14.50 <span>/ 250 g</span></p>
+            <button class="cl-offcanvas02__add" type="button" data-add-to-cart="guji">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <ul class="cl-offcanvas02__perks" aria-label="Why order from us">
+        <li><strong>Roasted to order</strong><span>Beans leave the roastery within 48 hours of roasting.</span></li>
+        <li><strong>Free shipping over &euro;75</strong><span>Tracked delivery across the EU in 2&ndash;4 working days.</span></li>
+        <li><strong>Home-compostable bags</strong><span>Valve and liner included, no plastic in the pack.</span></li>
+      </ul>
+    </main>
+
+    <dialog class="cl-offcanvas02__drawer" id="cl-offcanvas02-cart" aria-labelledby="cl-offcanvas02-title">
+      <div class="cl-offcanvas02__head">
+        <h2 class="cl-offcanvas02__title" id="cl-offcanvas02-title">Your cart <span data-cart-count-title>(3)</span></h2>
+        <button class="cl-offcanvas02__close" type="button" aria-label="Close cart" data-drawer-close>
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="cl-offcanvas02__ship">
+        <p class="cl-offcanvas02__ship-text" data-ship-text>You are <strong>&euro;15.50</strong> away from free shipping</p>
+        <div class="cl-offcanvas02__meter" role="progressbar" aria-label="Progress to free shipping" aria-valuemin="0" aria-valuemax="75" aria-valuenow="59.5" aria-valuetext="€59.50 of €75.00">
+          <span class="cl-offcanvas02__meter-fill" data-ship-fill></span>
+        </div>
+      </div>
+
+      <ul class="cl-offcanvas02__items" data-cart-items>
+        <li class="cl-offcanvas02__item" data-id="guji" data-price="14.50">
+          <img class="cl-offcanvas02__thumb" src="images/guji-beans.jpg" width="200" height="200" alt="">
+          <div class="cl-offcanvas02__info">
+            <h3 class="cl-offcanvas02__item-name">Guji Natural</h3>
+            <p class="cl-offcanvas02__item-meta">250 g &middot; Whole bean</p>
+            <div class="cl-offcanvas02__stepper">
+              <button class="cl-offcanvas02__step" type="button" data-step="-1" aria-label="Decrease quantity of Guji Natural">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </button>
+              <label class="cl-offcanvas02__sr" for="cl-offcanvas02-qty-guji">Quantity of Guji Natural</label>
+              <input class="cl-offcanvas02__qty" id="cl-offcanvas02-qty-guji" type="number" inputmode="numeric" min="1" max="20" value="1">
+              <button class="cl-offcanvas02__step" type="button" data-step="1" aria-label="Increase quantity of Guji Natural">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="cl-offcanvas02__side">
+            <p class="cl-offcanvas02__line" data-line-total>&euro;14.50</p>
+            <button class="cl-offcanvas02__remove" type="button" data-remove aria-label="Remove Guji Natural">Remove</button>
+          </div>
+        </li>
+        <li class="cl-offcanvas02__item" data-id="espresso" data-price="21.00">
+          <img class="cl-offcanvas02__thumb" src="images/espresso-blend.jpg" width="200" height="200" alt="">
+          <div class="cl-offcanvas02__info">
+            <h3 class="cl-offcanvas02__item-name">Espresso No. 4</h3>
+            <p class="cl-offcanvas02__item-meta">500 g &middot; Ground for espresso</p>
+            <div class="cl-offcanvas02__stepper">
+              <button class="cl-offcanvas02__step" type="button" data-step="-1" aria-label="Decrease quantity of Espresso No. 4">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </button>
+              <label class="cl-offcanvas02__sr" for="cl-offcanvas02-qty-espresso">Quantity of Espresso No. 4</label>
+              <input class="cl-offcanvas02__qty" id="cl-offcanvas02-qty-espresso" type="number" inputmode="numeric" min="1" max="20" value="1">
+              <button class="cl-offcanvas02__step" type="button" data-step="1" aria-label="Increase quantity of Espresso No. 4">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="cl-offcanvas02__side">
+            <p class="cl-offcanvas02__line" data-line-total>&euro;21.00</p>
+            <button class="cl-offcanvas02__remove" type="button" data-remove aria-label="Remove Espresso No. 4">Remove</button>
+          </div>
+        </li>
+        <li class="cl-offcanvas02__item" data-id="cups" data-price="24.00">
+          <img class="cl-offcanvas02__thumb" src="images/cortado-cups.jpg" width="200" height="200" alt="">
+          <div class="cl-offcanvas02__info">
+            <h3 class="cl-offcanvas02__item-name">Stoneware cortado cups</h3>
+            <p class="cl-offcanvas02__item-meta">Set of 2 &middot; 150 ml &middot; Charcoal</p>
+            <div class="cl-offcanvas02__stepper">
+              <button class="cl-offcanvas02__step" type="button" data-step="-1" aria-label="Decrease quantity of Stoneware cortado cups">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </button>
+              <label class="cl-offcanvas02__sr" for="cl-offcanvas02-qty-cups">Quantity of Stoneware cortado cups</label>
+              <input class="cl-offcanvas02__qty" id="cl-offcanvas02-qty-cups" type="number" inputmode="numeric" min="1" max="20" value="1">
+              <button class="cl-offcanvas02__step" type="button" data-step="1" aria-label="Increase quantity of Stoneware cortado cups">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="cl-offcanvas02__side">
+            <p class="cl-offcanvas02__line" data-line-total>&euro;24.00</p>
+            <button class="cl-offcanvas02__remove" type="button" data-remove aria-label="Remove Stoneware cortado cups">Remove</button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="cl-offcanvas02__empty" data-cart-empty hidden>
+        <svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 7h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 7z M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <p class="cl-offcanvas02__empty-title">Your cart is empty</p>
+        <p class="cl-offcanvas02__empty-text">Fresh roasts ship every Tuesday and Friday.</p>
+      </div>
+
+      <div class="cl-offcanvas02__summary">
+        <dl class="cl-offcanvas02__totals">
+          <div><dt>Subtotal</dt><dd data-subtotal>&euro;59.50</dd></div>
+          <div><dt>Shipping</dt><dd data-shipping>&euro;4.90</dd></div>
+          <div class="cl-offcanvas02__grand"><dt>Total</dt><dd data-total>&euro;64.40</dd></div>
+        </dl>
+        <p class="cl-offcanvas02__sr" role="status" data-cart-status></p>
+        <button class="cl-offcanvas02__checkout" type="button" data-checkout>
+          Checkout
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="cl-offcanvas02__continue" type="button" data-drawer-close>Continue shopping</button>
+        <p class="cl-offcanvas02__note">Taxes included. Orders before 14:00 ship the same day.</p>
+      </div>
+    </dialog>
+  </div>
+	<script src="js/snippet.js"></script>
+</body>
+</html>

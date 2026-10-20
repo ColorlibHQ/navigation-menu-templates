@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offcanvas V04 | Colorlib</title>
+  
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cl-offcanvas04">
+    <header class="cl-offcanvas04__bar">
+      <a class="cl-offcanvas04__logo" href="#">leaf<span>&amp;</span>loam</a>
+      <nav class="cl-offcanvas04__menu" aria-label="Shop">
+        <a href="#" aria-current="page">Houseplants</a>
+        <a href="#">Pots</a>
+        <a href="#">Care kits</a>
+      </nav>
+    </header>
+
+    <main class="cl-offcanvas04__page">
+      <div class="cl-offcanvas04__intro">
+        <h1 class="cl-offcanvas04__h1">Houseplants</h1>
+        <p class="cl-offcanvas04__lede">Grown in our Rotterdam glasshouse and delivered in reusable crates.</p>
+      </div>
+
+      <div class="cl-offcanvas04__toolbar">
+        <button class="cl-offcanvas04__filter-btn" type="button" aria-expanded="false" aria-controls="cl-offcanvas04-filters" data-drawer-open>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          Filters
+          <span class="cl-offcanvas04__active-count" data-active-count hidden></span>
+        </button>
+        <p class="cl-offcanvas04__results" role="status" data-results><strong>8</strong> plants</p>
+        <ul class="cl-offcanvas04__chips" data-chips aria-label="Active filters"></ul>
+      </div>
+
+      <ul class="cl-offcanvas04__grid" data-grid>
+          <li class="cl-offcanvas04__product" data-light="bright" data-size="small" data-care="easy" data-pet="no" data-price="18">
+            <img class="cl-offcanvas04__img" src="images/aloe.jpg" width="440" height="520" alt="Healthy aloe vera in a mint ceramic pot" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Aloe vera</a></h3>
+            <p class="cl-offcanvas04__latin">Aloe barbadensis</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Bright light</li><li>Easy care</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;18</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="bright" data-size="small" data-care="easy" data-pet="yes" data-price="14">
+            <img class="cl-offcanvas04__img" src="images/cactus.jpg" width="440" height="520" alt="Tall green cactus in an orange pot against a pink wall" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Fairy castle cactus</a></h3>
+            <p class="cl-offcanvas04__latin">Acanthocereus tetragonus</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Bright light</li><li>Easy care</li><li>Pet-safe</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;14</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="medium" data-size="medium" data-care="easy" data-pet="no" data-price="32">
+            <img class="cl-offcanvas04__img" src="images/rubber.jpg" width="440" height="520" alt="Rubber plant with glossy dark green leaves" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Rubber plant</a></h3>
+            <p class="cl-offcanvas04__latin">Ficus elastica</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Medium light</li><li>Easy care</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;32</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="bright" data-size="small" data-care="moderate" data-pet="no" data-price="39">
+            <img class="cl-offcanvas04__img" src="images/bonsai.jpg" width="440" height="520" alt="Small ficus bonsai with a thick twisted trunk in a white pot" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Ginseng ficus bonsai</a></h3>
+            <p class="cl-offcanvas04__latin">Ficus microcarpa</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Bright light</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;39</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="medium" data-size="small" data-care="easy" data-pet="yes" data-price="12">
+            <img class="cl-offcanvas04__img" src="images/haworthia.jpg" width="440" height="520" alt="Striped haworthia succulent in a concrete pot" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Zebra haworthia</a></h3>
+            <p class="cl-offcanvas04__latin">Haworthiopsis attenuata</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Medium light</li><li>Easy care</li><li>Pet-safe</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;12</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="medium" data-size="large" data-care="easy" data-pet="no" data-price="65">
+            <img class="cl-offcanvas04__img" src="images/monstera.jpg" width="440" height="520" alt="Large monstera with split leaves in a white pot, held in two hands" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Monstera, floor size</a></h3>
+            <p class="cl-offcanvas04__latin">Monstera deliciosa</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Medium light</li><li>Easy care</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;65</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="low" data-size="medium" data-care="easy" data-pet="no" data-price="28">
+            <img class="cl-offcanvas04__img" src="images/snake.jpg" width="440" height="520" alt="Upright snake plant with dark banded leaves in a white pot" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Snake plant</a></h3>
+            <p class="cl-offcanvas04__latin">Dracaena trifasciata</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Low light</li><li>Easy care</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;28</p>
+          </li>
+          <li class="cl-offcanvas04__product" data-light="medium" data-size="small" data-care="moderate" data-pet="no" data-price="24">
+            <img class="cl-offcanvas04__img" src="images/monstera-chair.jpg" width="440" height="520" alt="Young monstera on a wooden stool next to a white chair" loading="lazy">
+            <h3 class="cl-offcanvas04__pname"><a href="#">Monstera, table size</a></h3>
+            <p class="cl-offcanvas04__latin">Monstera deliciosa</p>
+            <ul class="cl-offcanvas04__tags" aria-label="Details"><li>Medium light</li></ul>
+            <p class="cl-offcanvas04__pprice">&euro;24</p>
+          </li>
+      </ul>
+      <p class="cl-offcanvas04__none" data-none hidden>No plants match these filters. Try widening the price range or clearing a filter.</p>
+    </main>
+
+    <dialog class="cl-offcanvas04__drawer" id="cl-offcanvas04-filters" aria-labelledby="cl-offcanvas04-title">
+      <form class="cl-offcanvas04__form" data-form>
+        <div class="cl-offcanvas04__head">
+          <h2 class="cl-offcanvas04__title" id="cl-offcanvas04-title">Filters</h2>
+          <button class="cl-offcanvas04__close" type="button" aria-label="Close filters" data-drawer-close>
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+
+        <div class="cl-offcanvas04__body">
+          <fieldset class="cl-offcanvas04__set">
+            <legend class="cl-offcanvas04__legend">Light</legend>
+            <label class="cl-offcanvas04__check"><input type="checkbox" name="light" value="bright"><span class="cl-offcanvas04__box" aria-hidden="true"></span>Bright, indirect<span class="cl-offcanvas04__num" data-count-for="light:bright">3</span></label>
+            <label class="cl-offcanvas04__check"><input type="checkbox" name="light" value="medium"><span class="cl-offcanvas04__box" aria-hidden="true"></span>Medium<span class="cl-offcanvas04__num" data-count-for="light:medium">4</span></label>
+            <label class="cl-offcanvas04__check"><input type="checkbox" name="light" value="low"><span class="cl-offcanvas04__box" aria-hidden="true"></span>Low light<span class="cl-offcanvas04__num" data-count-for="light:low">1</span></label>
+          </fieldset>
+
+          <fieldset class="cl-offcanvas04__set">
+            <legend class="cl-offcanvas04__legend">Plant size</legend>
+            <div class="cl-offcanvas04__chipset">
+            <label class="cl-offcanvas04__chip"><input type="checkbox" name="size" value="small"><span>Small &middot; up to 30 cm</span></label>
+            <label class="cl-offcanvas04__chip"><input type="checkbox" name="size" value="medium"><span>Medium &middot; 30&ndash;80 cm</span></label>
+            <label class="cl-offcanvas04__chip"><input type="checkbox" name="size" value="large"><span>Large &middot; 80 cm+</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="cl-offcanvas04__set">
+            <legend class="cl-offcanvas04__legend">Care level</legend>
+            <label class="cl-offcanvas04__check"><input type="checkbox" name="care" value="easy"><span class="cl-offcanvas04__box" aria-hidden="true"></span>Easy, forgiving<span class="cl-offcanvas04__num" data-count-for="care:easy">6</span></label>
+            <label class="cl-offcanvas04__check"><input type="checkbox" name="care" value="moderate"><span class="cl-offcanvas04__box" aria-hidden="true"></span>Needs attention<span class="cl-offcanvas04__num" data-count-for="care:moderate">2</span></label>
+          </fieldset>
+
+          <fieldset class="cl-offcanvas04__set">
+            <legend class="cl-offcanvas04__legend">Price</legend>
+            <div class="cl-offcanvas04__price">
+              <label class="cl-offcanvas04__money">
+                <span class="cl-offcanvas04__money-label">Min</span>
+                <span class="cl-offcanvas04__money-field"><span aria-hidden="true">&euro;</span><input type="number" name="min" min="0" max="100" step="1" placeholder="0" inputmode="numeric"></span>
+              </label>
+              <span class="cl-offcanvas04__dash" aria-hidden="true">&ndash;</span>
+              <label class="cl-offcanvas04__money">
+                <span class="cl-offcanvas04__money-label">Max</span>
+                <span class="cl-offcanvas04__money-field"><span aria-hidden="true">&euro;</span><input type="number" name="max" min="0" max="100" step="1" placeholder="100" inputmode="numeric"></span>
+              </label>
+            </div>
+            <p class="cl-offcanvas04__hint" data-price-hint>Prices from &euro;12 to &euro;65.</p>
+          </fieldset>
+
+          <label class="cl-offcanvas04__switch">
+            <span><strong>Pet-safe only</strong><span class="cl-offcanvas04__switch-note">Non-toxic to cats and dogs</span></span>
+            <input type="checkbox" name="pet" value="yes" role="switch">
+          </label>
+        </div>
+
+        <div class="cl-offcanvas04__foot">
+          <button class="cl-offcanvas04__clear" type="button" data-clear>Clear all</button>
+          <button class="cl-offcanvas04__apply" type="submit" data-apply>Show 8 plants</button>
+        </div>
+      </form>
+    </dialog>
+  </div>
+	<script src="js/snippet.js"></script>
+</body>
+</html>
